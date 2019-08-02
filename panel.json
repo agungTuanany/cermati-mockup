@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Consult",
+        "details": "Co-create, design thinking; strengthen infrastructure resist granular. Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling revolutionary progress",
+        "icon": "fas fa-comments"
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Design",
+        "details": "Policymaker collaborates collective impact humanitarian shared value vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile issue outcomes vibrant boots on the ground sustainable",
+        "icon": "fas fa-paint-brush"
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Develop",
+        "details": "Revolutionary circular, movements a or impact framework social impact low-hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities of though provoking",
+        "icon":"fas fa-cubes"
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Marketing",
+        "details": "Peaceful; vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resilient, uplift social transparent effective",
+        "icon": "fas fa-bullhorn"
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Manage",
+        "details": "Change-makers innovation or shared unit of analysis. Overcome injustice outcomes strategize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism corporate social",
+        "icon": "fas fa-tasks"
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Evolve",
+        "details": "Activate catalyze and impact contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leadership mass incarceration. Outcomes big data, fairness, social game-changer",
+        "icon": "fas fa-chart-line"
+      }
+    }
+  ]
+}

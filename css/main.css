@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400,700&display=swap');
+
+:root {
+  --mainSpacing:0.1rem;
+  --mainTransition: all 0.8s linear;
+  /* cermati color pallete */
+  --mainBlue: #007BC1;
+  --darkblue: #004A75;
+  --mainOrange: #FF8000;
+  --darkOrange: #CC6600;
+  --smokeGrey: #E5E5E5;
+  /* color I added for font-color */
+  --mainWhite: #FFFCFF;
+  --mainBlack: #030504;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   }
+
+body {
+  color: var(--mainBlack);
+  font-family: 'Roboto Mono', monospace !important;
+  background:var(--smokeGrey);
+  width: 100%;
+  height: 100%;
+}
+
+/* general | reusable */
+
+
+
+/* notif */
+.notif-panel {
+  max-width: 720px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7rem;
+}
+
+.notif-panel__p {
+  text-align: center;
+}
+
+.notif-panel_btn {
+  color: var(--mainWhite);
+  background-color: var(--mainBlue);
+  width: 6rem;
+  height: 2rem;
+  font-size: 0.7rem;
+}
+/* end of notif */
+
+/* hero section */
+.cermati-hero {
+  width: 100%;
+  min-height: calc(100vh - 49px );
+  text-align: center;
+  background: linear-gradient(rgba(0, 74, 117,0.7), rgba(0, 74, 117, 0.7)), url('../images/work-desk__dustin-lee.jpg') center/cover fixed no-repeat;
+  color: var(--mainWhite);
+}
+
+.cermati-hero::before {
+  background-color: var(--darkblue);
+  content: '';
+  height: inherit;
+  width: inherit;
+}
+
+.cermati-hero__text {
+  padding: 10rem 5rem;
+}
+
+.cermati-hero__h2 {
+  margin-bottom: 2rem;
+}
+
+.cermati-hero__p {
+  line-height: .5rem;
+}
+
+.cermati-hero__btn {
+  background-color: Transparent;
+  cursor: pointer;
+  border: 2px solid var(--mainWhite);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.cermati-hero__btn:hover {
+  background-color: var(--mainWhite);
+  color: var(--darkblue) !important;
+}
+/* end of hero section */
+
+/* hl Panel */
+.cermati-hl-panel__header {
+  text-align: center;
+  margin: 2rem auto;
+}
+.cermati-hl-panel__h3 {
+  text-transform: capitalize;
+}
+
+.cermati-hl-single-panel {
+  border: 1px solid silver;
+  padding: 1rem;
+  width: 100vh;
+  margin: 1rem 1rem;
+}
+
+.cermati-hl-single-panel__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cermati-hl-single-panel__icon {
+  font-size: 2rem;
+  color: silver;
+}
+
+.cermati-hl-single-panel__detail {
+  font-size: 1rem;
+  font-weight: 200;
+}
+/* end of hl Panel */
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2) translate(-5%);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
