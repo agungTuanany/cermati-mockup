@@ -29,7 +29,7 @@ class UI {
     panels.forEach(panel => {
       result += `
         <!-- single panel -->
-        <div class= 'col-6 col-md-4'>
+        <div class= 'col-lg-4 col-md-6 col-sm-12'>
           <div class='cermati-hl-single-panel'>
             <div class='cermati-hl-single-panel__header'>
               <h4 class='cermati-hl-single-panel__title'>${panel.title}</h4><i class='cermati-hl-single-panel__icon ${panel.icon}'></i>
