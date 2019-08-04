@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400,700&display=swap');
-
+/* @import url('https://f.98onts.googleapis.com/css?family=Roboto+Mono:300i,400,700&display=swap');
+*/
 :root {
   --mainSpacing:0.1rem;
   --mainTransition: all 0.8s linear;
@@ -30,6 +30,9 @@ body {
 }
 
 /* general | reusable */
+button.close {
+  outline: none;
+}
 
 
 
@@ -96,6 +99,7 @@ body {
   padding: 1rem;
   margin-top: 2rem;
   text-transform: uppercase;
+  outline: none;
 }
 
 .cermati-hero__btn:hover {
@@ -148,9 +152,60 @@ body {
 }
 /* end of hl Panel */
 
+/* newsletter panel */
+.cermati-nl-panel {
+  width: 640px;
+  background: rgba(0, 123, 193, 0.8);
+  color: var(--mainWhite);
+  margin : 1rem;
+  position: absolute;
+  z-index: 2;
+  transform: translateX(-680px);
+  transition: transform ease-in-out 800ms;
+  top: 89.5rem;
+}
+
+.active {
+  transform: translateX(10px);
+  transition: transform ease-in-out 800ms;
+  position: absolute;
+}
+
+.cermati-nl-panel-btn__close {
+  color: var(--mainWhite);
+  padding: .5rem !important;
+  outline: none;
+}
+
+.cermati-nl-container {
+  padding: 1rem;
+}
+
+.cermati-nl-panel__h4 {
+  font-weight: bold;
+}
+
+.cermati-nl-panel__p {
+  font-size: .8rem;
+}
+
+.cermati-form-group {
+  margin-bottom: 0;
+  display:flex;
+  flex-direction: row;
+}
+
+.cermati-form-group__btn {
+  background: var(--mainOrange);
+  color: var(--mainWhite);
+  width: 14rem;
+  margin-left: 1rem;
+}
+/* end of newsletter panel */
+
 /* @media screen devices */
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .cermati-notif-panel {
     display: block;
   }
@@ -182,16 +237,114 @@ body {
     padding: .5rem .5rem;
     font-size: .7rem;
   }
-}
 
-@media (min-width: 768px) {
-  .cermati-hero__h2 {
+  .cermati-nl-panel {
+    width: 465px;
+    top: 149rem !important;
+    margin: .5rem;
+  }
+
+  .cermati-form-group {
+    flex-direction: column;
+  }
+
+  .cermati-form-group__btn {
+    display: block;
+    width: auto;
+    margin: .5rem 0 0 0;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .cermati-notif-panel {
+    display: block;
+  }
+
+  .cermati-hero__logo {
+    height: 8vh;
+    top: 11rem;
+  }
   .cermati-hero__text {
+    position: unset;
+    transform: none;
   }
+
+  .cermati-hero__h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  .cermati-hero__h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .cermati-hero__btn {
+    margin-top: 1rem;
+  }
+
+  .cermati-footer__p {
+    padding: .5rem .5rem;
+    font-size: .7rem;
+  }
+
+  .cermati-nl-panel {
+    width: 465px;
+    top: 149rem !important;
+    margin: .5rem;
+  }
+
+  .cermati-form-group {
+    flex-direction: column;
+  }
+
+  .cermati-form-group__btn {
+    display: block;
+    width: auto;
+    margin: .5rem 0 0 0;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .cermati-nl-panel {
+    top: 110rem !important;
+    margin: .5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .cermati-nl-panel {
+    top:94.5rem !important;
+    margin: .5rem;
+  }
+}
+@media(min-width: 1441.98px) {
+  .cermati-nl-panel {
+    top:96.5rem !important;
+    margin: .5rem;
+  }
+
+}
+/* animation */
+
+@keyframes slideIn {
+  from{ transform: translateX(0) };
+  to { transform: translateX(100px) };
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-380px);
+  }
+
+  100% {
+    transform: translateX(-680px);
+  }
+
 
 }
 
