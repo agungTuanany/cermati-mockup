@@ -2,6 +2,26 @@ const panelsDOM = document.querySelector('.cermati-hl-panel__row');
 const newsLetter = document.querySelector('.cermati-nl-panel');
 const panelBtn = document.querySelector('.cermati-nl-panel-btn__close');
 
+const notifPanel = document.getElementById('cermati-notif-panel')
+const notifBtn = document.querySelector('.cermati-notif-panel__btn');
+const cermatiHero = document.getElementById('cermati-hero');
+
+const notifClick = () => {
+  if(notifPanel.style.display === 'none') {
+    notifPanel.style.display = 'block';
+  } else {
+    notifPanel.style.transform = 'translateY(-50px)';
+    notifPanel.style.transition = 'transform ease-in-out 500ms .5s';
+    cermatiHero.style.transform = 'translateY(-83px)';
+    cermatiHero.style.transition = 'all ease-out 800ms .5s';
+
+
+  }
+
+}
+
+notifBtn.addEventListener('click', notifClick);
+
 // getting the panel.json
 class Panels {
 
