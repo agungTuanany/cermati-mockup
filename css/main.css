@@ -280,3 +280,16 @@ button.close {
     top: 94.5rem !important;
   }
 }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform : translateY(140px);
+  transition: visibility 0s 2s, opacity 2s linear, transform 2s linear;
+  overflow: hidden;
+}
+
+.hidden > div {
+  margin-top: -1000px;
+  transition: margin-top 0s 2s;
+}

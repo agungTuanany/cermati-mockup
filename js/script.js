@@ -103,7 +103,7 @@ const checkSlide = (e) => {
   const isHalfShown = newsLetterAt > newsLetter.offsetTop;
   const isNotScrollPast = windowY < newsLetterBottom;
 
-  isHalfShown && isNotScrollPast ? newsLetter.classList.add('active') : newsLetter.classList.remove('active');
+  isHalfShown && isNotScrollPast ? newsLetter.classList.add('active') : "";
 
 
   /* retrieve newsletter position */
@@ -116,7 +116,12 @@ const checkSlide = (e) => {
 window.addEventListener('scroll', debounce(checkSlide));
 
 const panelClick = () => {
-  newsLetter.style.display === 'none' ? newsletter.style.display = 'block' : newsLetter.style.transform = 'translateX(-680px)';
+  if(newsLetter.style.display === 'none') {
+    newsLetter.style.display = 'block';
+  } else {
+    newsLetter.classList.add('hidden');
+    newsLetter.classList.remove('active');
+  }
 }
 
 panelBtn.addEventListener('click', panelClick);
