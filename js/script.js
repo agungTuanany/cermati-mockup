@@ -105,6 +105,12 @@ const checkSlide = (e) => {
 
   isHalfShown && isNotScrollPast ? newsLetter.classList.add('active') : "";
 
+  setTimeout(() => {
+    if(newsLetter.className === 'cermati-nl-panel active') {
+      newsLetter.classList.remove('active');
+    }
+  }, 6000 * 100)
+
 
   /* retrieve newsletter position */
   //console.log(newsLetterHeight)

@@ -159,15 +159,22 @@ button.close {
   margin : .5rem;
   position: absolute;
   z-index: 2;
-  transform: translateX(-680px);
-  transition: transform ease-in-out 800ms;
+  transform: translateY(-10rem);
   top: 86.5rem;
+  opacity: 0;
+  transition: transform ease-in-out 800ms .5s;
 }
 
 .active {
   transform: translateX(10px);
-  transition: transform ease-in-out 800ms;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s 2s, opacity 2s linear,  transform ease-out 2s;
   position: absolute;
+}
+
+.active > {
+
 }
 
 .cermati-nl-panel-btn__close {
